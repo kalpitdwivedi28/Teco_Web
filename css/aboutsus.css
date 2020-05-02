@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+#mainsection{
+	background-color:#A1A1A4; 
+	margin-top: 80px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	height: 1100px;
+}
+
+#aboutUs{
+	width: 1366px;
+	margin: 0 auto;
+}
+
+.txt_line{
+	margin-left: 150px;
+}
+
+.abouttxt{
+	float: left;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.hr_line{
+	float: left;
+	width: 820px;
+	height: 1px;
+	background-color: black;
+	border: 2px solid black;
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.about_part_01{
+	padding-top: 100px;
+	padding-left: 200px;
+}
+
+.about_img{
+	float: left;
+}
+
+.about_txt{
+	float: left;
+	width: 350px;
+	margin-left: 40px;
+	font-size: 1rem;
+	line-height: 25px;
+	color: #4A4A4B;
+	word-break: break-all;
+}
+
+#section02{
+	clear: both;
+}
+
+.team{
+	margin-left: 200px;
+}
+
+.meet{
+	margin-top: 500px;
+	margin-bottom: 30px;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.teamimg{
+	float: left;
+}
+
+.teamtxt{
+	float: left;
+	padding-left: 50px;
+	text-align: center;
+}
+
+.font_6{
+	font-size: 1.5rem;
+	padding-bottom:20px;
+}
+
+.font_8{
+	font-size: .8rem;
+}
+
+/*footer part*/
+
+#lastPart{
+	background-color: black;
+	color: white;
+	height: 400px;
+}
+
+.last_part{
+	width: 1366px;
+	margin: 0 auto;
+}
+
+.help{
+	float: left;
+	margin-top: 90px;
+	margin-left: 200px;
+}
+
+.help p{
+	padding-top: 30px;
+}
+
+.footer_line{
+	float: left;
+	width: 700px;
+	height: 5px;
+	background-color: white;
+	margin-top: 100px;
+	margin-left: 80px;
+	margin-bottom: 30px;
+}
+
+.footer_list{
+	float: left;
+	margin-left: 150px;
+}
+
+.footer_list ul{
+	display: inline-block;
+	margin-left: 40px;
+	margin-right: 60px;
+}
+
+.footer_list a{
+	color: white;
+	padding-top: 20px;
+}
+
+.footer_list a:hover{
+	color:#199c98;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+/* searchBox */
+#searchbox{
+   display: none;
+   position: fixed;
+   top: 30px;
+   right: 250px;
+   background-color: white;
+   width:350px;
+   height: 60px;
+   border-radius: 3px;
+}
+
+#searchbox.popup{
+  display: block;
+}
+
+#searchclose{
+  color: #aaaaaa;
+  float: right;
+  cursor: pointer;
+  padding:2px 5px 0 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#searchclose:hover,
+#searchclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search_box{
+  padding-top: 20px;
+}
+
+.box_search{
+  width: 300px;
+  height: 20px;
+  margin: 0 5px 0 20px;
+  padding:2px 0 2px 20px;
+  border-radius: 10px;
+  outline: 0;
+  border: 1px solid black;
+  font-size: 20px;
+}

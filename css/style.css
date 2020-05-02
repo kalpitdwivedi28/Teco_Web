@@ -1,0 +1,835 @@
+/* defacult css */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a,img{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  font-family: sans-serif;
+  color: black;
+}
+
+button{
+  cursor: pointer;
+  outline: 0;
+}
+
+/*button text color*/
+button >a{
+  color: white;
+}
+
+/* headerpart */
+#main{
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    height: 800px;
+}
+
+#headerpart{
+  width: 1366px;
+  margin: 0 auto;
+  /*background-color: #FDFEFE;*/
+}
+
+#logo{
+  display: inline-block;
+  padding-top: 50px;
+  padding-left: 100px;
+  cursor: context-menu;
+}
+
+.main_navigesan{
+  float: right;
+  margin-top: 50px;
+  margin-right: 150px;
+}
+
+.navigesan >li{
+  display: inline-block;
+  position: relative;
+}
+
+.fas{
+  font-size: 1.5rem;
+}
+
+.navigesan >li >a{
+  margin: 0 25px;
+  font-size: .9rem;
+  font-weight:600;
+}
+
+.arrow{
+  font-size: 1.5rem;
+  margin-left: 3px;
+}
+
+.dropdwon_menu{
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  /*background-color: #FDFEFE;*/
+  padding:25px 5px 10px 10px; 
+}
+
+.dropdwon_menu li>a{
+  font-size: .8rem;
+}
+
+.dropdwon_menu a:hover{
+  text-decoration: underline;
+}
+
+.dropdwon:hover .dropdwon_menu{
+  display: block;
+}
+
+/* searchBox */
+#searchbox{
+   display: none;
+   position: fixed;
+   top: 30px;
+   right: 250px;
+   background-color: #fffeec;
+   width:350px;
+   height: 60px;
+   border-radius: 10px;
+}
+
+#searchbox.popup{
+  display: block;
+}
+
+#searchclose{
+  color: #aaaaaa;
+  float: right;
+  cursor: pointer;
+  padding:2px 5px 0 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#searchclose:hover,
+#searchclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search_box{
+  padding-top: 20px;
+}
+
+.box_search{
+  width: 300px;
+  height: 20px;
+  margin: 0 5px 0 20px;
+  padding:2px 0 2px 10px;
+  border-radius: 10px;
+  outline: 0;
+  border: 1px solid black;
+}
+
+/*.search_click{
+  width: 80px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border:1px solid black;
+  outline: 0;
+}*/
+
+/* loginpage */
+
+#signin_main{
+   display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#signinclose{
+  float: right;
+  cursor: pointer;
+  font-size: 2rem;
+  padding-right: 5px;
+}
+
+#signin{
+  width: 850px;
+  background: white;
+  height: 500px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+.login_img{
+  width: 400px;
+  height: 500px;
+  background-image: url('../images/blogger3.png');
+  background-size: 125% 100%;
+  float: left;
+}
+
+.login_txt{
+  color: white;
+  text-align: center;
+  padding-top: 230px;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.form{
+  float: right;
+  width: 400px;
+  height: 500px;
+}
+
+.form_head{
+  clear: both;
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.lform{
+  padding-left: 10px;
+}
+
+.login{
+  font-size: 1.5rem;
+  padding-top: 100px;
+}
+
+.login_form{
+  padding-top: 50px;
+}
+
+.label{
+  font-size: .8rem;
+  padding-bottom: 8px;
+}
+
+.right{
+  float: right;
+  font-size: .8rem;
+  padding-right: 25px;
+}
+
+#user{
+  width: 350px;
+  height: 15px;
+  padding: 5px 0 5px 10px;
+  border:.2px solid black;
+}
+
+.details{
+  font-size: .8rem;
+  padding-top: 3px;
+}
+
+#signin_btn{
+  width: 150px;
+  height: 40px;
+  border: 0;
+  border-radius: 2px;
+  background-color: #000080;
+  color: white;
+  margin: 40px 0 0 150px;
+}
+
+.copy{
+  text-align: center;
+  font-size: .8rem;
+  padding-top: 60px;
+}
+
+/* signup */
+
+#signup_main{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#signupclose{
+  float: right;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+#signup{
+  width: 850px;
+  background: white;
+  height: 500px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ .signup_img{
+  width: 400px;
+  height: 500px;
+  background-image: url('../images/signimg1.png');
+  background-size: 100% 100%;
+  float: left;
+ }
+
+.signup_txt{
+  color: white;
+  text-align: center;
+  padding-top: 130px;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.signup_form{
+  padding-top: 20px;
+}
+
+.input_txt{
+  font-size: .8rem;
+  padding-bottom: 8px;
+}
+
+#input_box{
+  width: 350px;
+  height: 15px;
+  padding: 5px 0 5px 10px;
+  border:.2px solid black;
+}
+
+#signup_btn{
+  width: 150px;
+  height: 40px;
+  border: 0;
+  border-radius: 2px;
+  background-color: #000080;
+  color: white;
+  margin: 40px 0 0 150px;
+}
+
+/* header/section1 */
+#section1{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.useraccount{
+  width: 400px;
+  margin-top: 210px;
+  margin-left: 100px;
+}
+
+.useraccount >h2{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 5px;
+}
+
+.useraccount >p{
+  font-size: .9rem;
+  line-height: 20px;
+}
+
+.btn1{
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: black;
+  color:white;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 5px;
+  margin-top: 20px;
+  outline: none;
+}
+
+.btn1:hover{
+    background-color: #F0F3F4;
+    color: black;
+}
+
+.btn2{
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: black;
+  color:white;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 5px;
+  outline: none;
+}
+
+.btn2:hover{
+    background-color: #F0F3F4;
+    color: black;
+}
+
+/* main/section2 */
+
+#section2{
+  width: 100%;
+  height: 400px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#463fcc+1,655edb+51,e7e6fa+100 */
+  background: #463fcc; /* Old browsers */
+  background: -moz-linear-gradient(left, #463fcc 1%, #655edb 51%, #e7e6fa 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #463fcc 1%,#655edb 51%,#e7e6fa 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #463fcc 1%,#655edb 51%,#e7e6fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#463fcc', endColorstr='#e7e6fa',GradientType=1 ); /* IE6-9 */
+/*margin: 30px 0;*/
+}
+
+.laptop{
+  width: 1366px;
+  margin:  0 auto;
+}
+
+.laptop_detail{
+  width: 300px;
+  height: 350px;
+  float: left;
+  text-align: center;
+  margin: 60px 0 60px 150px;
+}
+
+.laptop_detail > h2{
+  color:white;
+  padding: 0 0 10px 0;
+}
+
+.laptop_detail > p{
+  color: white;
+  font-size: .9rem;
+  line-height: 20px;
+  word-break: break-all;
+}
+
+.btn3{
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: black;
+  color:white;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn3:hover{
+    background-color:#D2B4DE;
+    color: black;
+}
+
+.game_laptop{
+  float: right;
+  padding-top: 20px;
+  padding-right: 100px;
+}
+
+/* section3 */
+
+#section3{
+  width: 100%;
+  height: 400px;
+  background-color: #f4e5e7;
+}
+
+.tablet{
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.tablet_head{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  padding-right: 512px;
+}
+
+.tablet_img >p{
+  font-weight: bold;
+  font-size: .8rem;
+  padding-left: 520px;
+}
+
+.btn4{
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: #199c98;
+  color:white;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 5px;
+  float: left;
+  margin: 150px 50px 0 100px;
+}
+
+.btn4 a:hover{
+    color: black;
+}
+
+.Img_tablet{
+  width: 1600%;
+}
+
+.alltabletimg{
+  overflow: hidden;
+  position: relative;
+}
+
+.Img_tablet li{
+    float: left;
+    display: block;
+    margin-top: 80px;
+    margin-right: 70px;
+    margin-left: 50px;
+}
+
+/*.img1{
+  float: left;
+  margin: 80px 50px 0 20px;
+}
+
+.img2{
+  float: left;
+  margin: 80px 50px 0 50px;
+}
+
+.img3{
+  float: left;
+  margin: 80px 50px 0 50px;
+}
+
+.img4{
+  float: left;
+  margin: 80px 0 0 50px;
+}
+
+.img5{
+  display: none;
+  float: left;
+}
+
+.img6{
+  display: none;
+  float: left;
+}
+
+.img7{
+  display: none;
+  float: left;
+}
+
+.img8{
+  display: none;
+  float: left;
+}*/
+
+.btn6{
+  float: right;
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+  color: black;
+  border:0;
+  outline: 0;
+  cursor: pointer;
+  /*margin :130px 100px 0 0;*/
+}
+
+
+/*section4*/
+
+#section4{
+  clear: both;
+  width: 100%;
+  height: 400px;
+  background-color: #fdfcd0;
+}
+
+.acces{
+  width: 1366px;
+  margin:0 auto;
+}
+
+.heading1{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.btn5{
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: #199c98;
+  color:white;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 5px;
+  float: left;
+  margin: 100px 50px 0 100px;
+}
+
+.btn5 a:hover{
+    color: black;
+}
+
+.speaker{
+  width: 300px;
+  float: left;
+  text-align: center;
+  margin:0 10px;
+}
+
+.speaker > p{
+  word-break: break-all;
+  font-size: .9rem;
+  line-height: 20px;
+}
+
+.headphone{
+  width: 300px;
+  float: left;
+  text-align: center;
+  margin:16px 15px 0 15px;
+}
+
+.headphone >img{
+  margin-left: 20px;
+}
+
+.headphone > p{
+  word-break: break-all;
+  font-size: .9rem;
+  line-height: 20px;
+}
+
+.earphone{
+  width: 300px;
+  float: left;
+  text-align: center;
+  margin:0 10px;
+}
+
+.earphone > img{
+  margin-left: 30px;
+}
+
+.earphone > h2 {
+  padding-top: 15px;
+}
+
+.earphone > p{
+  word-break: break-all;
+  font-size: .9rem;
+  line-height: 20px;
+}
+
+/*section5*/
+
+#apple{
+  width: 100%;
+  height: 400px;
+  background-color: #f4e5e7;
+}
+
+.iphone{
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.apple_img{
+  float: left;
+  margin:20px 0 20px 150px;
+}
+
+.iphone_txt{
+  text-align: center;
+  width: 400px;
+  float: left;
+  margin:100px 0 0 60px;
+}
+
+.iphone_txt >h2{
+  padding-bottom: 20px;
+  color: #199c98;
+}
+
+.iphone_txt > p{
+  word-break: break-all;
+  font-size: .9rem;
+  line-height: 20px;
+}
+
+.iphone_btn{
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: #199c98;
+  color:white;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 5px;
+  margin: 20px 0 0 0;
+}
+
+.iphone_btn a:hover{
+    color: black;
+}
+
+
+#mobile{
+  clear: both;
+  width: 100%;
+  height:400px;
+  background-color: #fdfcd0;
+}
+
+.smartphone{
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.pnone{
+  float: right;
+  margin: 20px 330px 20px 0;
+}
+
+.phone_txt{
+  float: left;
+  text-align: center;
+  width: 400px;
+  margin:100px 0 0 250px;
+}
+
+.phone_txt > h2{
+   padding-bottom: 20px;
+   color: #199c98;
+}
+
+.phone_txt > p{
+  word-break: break-all;
+  font-size: .9rem;
+  line-height: 20px;
+}
+
+.phone_btn{
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: #199c98;
+  color:white;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 5px;
+  margin: 20px 0 0 0;
+}
+
+
+.phone_btn a:hover{
+    color: black;
+}
+
+/*footerpart*/
+
+#footerpart{
+  clear: both;
+  width: 100%;
+  height: 350px;
+  background-color: #f6f6f6;
+}
+
+.lastpart{
+  width: 1366px;
+  margin: 0 auto;
+}
+
+ .footer_nav{
+  float: left;
+  margin: 40px 0 0 100px;
+  font-size: .8rem;
+}
+
+.footer_nav  li{
+  padding: 5px 0;
+}
+
+.footer_nav li a:hover{
+  color: #273746;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.office{
+  float: right;
+  width: 200px;
+  margin: 50px 180px 0 0;
+}
+
+.office > h3{
+  padding-bottom: 5px;
+  font-size:.9rem;
+}
+
+.office > p{
+  line-height: 20px;
+  font-size: .8rem;
+}
+
+.social_media{
+  clear: both;
+  padding: 80px 0 0 550px;
+}
+
+.social_media > img{
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 2px;
+}
+
+.social_media >p{
+  font-size: .8rem;
+}

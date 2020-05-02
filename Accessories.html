@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=0">	
+	<title>Accessories</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/laptopStyle.css">
+	<link rel="stylesheet" href="fontawesome5/web-fonts-with-css/css/fontawesome-all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style type="text/css">
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#topcontener{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.items{
+    margin-top:100px;
+    margin-left: 150px; 
+}
+
+.line_1_list{
+    padding-left: 40px;
+}
+
+.line_1_list li{
+    width: 150px;
+    display: inline-grid;
+    text-align: center;
+    padding: 10px 50px 20px 55px;
+}
+
+.line_2_list{
+    padding-left: 40px;
+}
+
+.line_2_list li{
+        display: inline-grid;
+        text-align: center;
+        padding: 20px 50px 20px 50px;
+}
+
+.line_3_list{
+    padding-left: 40px;
+    text-align: center;
+}
+
+.line_3_list li{
+        display: inline-grid;
+        text-align: center;
+        padding: 20px 50px 20px 50px;
+}
+
+.line_4_list{
+    padding-left: 40px;
+}
+
+.line_4_list li{
+        display: inline-grid;
+        text-align: center;
+        padding: 20px 50px 20px 30px;
+}
+
+.line_5_list{
+    padding-left: 40px;
+}
+
+.line_5_list li{
+        display: inline-grid;
+        text-align: center;
+        padding: 20px 50px 20px 50px;
+}
+
+.line_6_list{
+    padding-left: 40px;
+    text-align: center;
+}
+
+.line_6_list li{
+        display: inline-grid;
+        text-align: center;
+        padding: 20px 50px 20px 50px;
+}
+
+.laptop_1 p{
+    font-size: .7rem;
+}
+
+.laptop_2 p{
+    font-size: .7rem;
+}
+</style>
+</head>
+<body>
+
+	<header id="headerpart">
+    <div id="Zoomheader">    
+		<h1 id="logo"><a href="index.html">TecoWeb</a></h1>
+
+		<nav class="main_navigesan">
+			<ul class="navigesan">
+			 	<li><a href="index.html">Home</a></li>
+			 	<li><a href="aboutus.html">AboutUs</a></li>
+			 	<li class="dropdwon" onclick="slide()" ondblclick="slideUp()"><a href="#">ToBuy<i class="fas fa-sort-down arrow"></i></a>
+					<ul class="dropdwon_menu">
+						<li><a href="Laptop.html">Laptop</a></li>
+						<li><a href="Tablet.html">Tablet</a></li>
+						<li><a href="Mobile.html">Mobile</a></li>
+						<li><a href="Accessories.html">Accessories</a></li>
+					</ul>
+				</li>
+				<li class="fas"><a href="#"><img src="images/shopping-cart.png"></a></li>
+				<li class="fas"><a href="#" onclick="searchOpen()"><img id="searchbtn" src="images/searcher.png"></a></li>
+		  </ul>
+		</nav>
+
+		<div id="searchbox">
+			<div id="contentSearch" class="modal_content">
+				 	<span id="searchclose" onclick="searchClose()">&times;</span>
+				 <div class="search_box">
+				 		<input class="box_search" type="text" placeholder="search">
+				 </div>
+			</div>
+		</div>
+    </div>    
+    </header>
+
+    <div id="topcontener">    
+    <div id="maincontener">
+
+    	<section class="items">
+    			<div class="items_line_1">
+                  <h3>Laptop Accessories</h3>  
+    				<nav class="line_1_list">
+    					<ul>
+    						<li>
+    							<div class="laptop_1">
+                                    <img src="images/hp03.png">
+                                    <p>HP Pavilion 65W Adapter(Power Cord Included)</p>
+                                    <p>900</p>
+    							</div>
+    						</li>
+    						<li>
+    							<div class="laptop_2">
+                                    <img src="images/lenovo03.png">
+                                    <p>Lenovo Genuine 65W Adapter(Power Cord Included)</p>
+                                    <p>1,000</p>
+    							</div>
+    						</li>
+    						<li>
+    							<div class="laptop_2">
+                                    <img src="images/hpusb.png">
+                                    <p>HP X3500 Wireless Comfort Mouse(USB)</p>
+                                    <p>650</p>
+    							</div>
+    						</li>
+    						<li>
+    							<div class="laptop_2">
+                                    <img src="images/keyboard.png">
+                                    <p>Logitech K400 Wireless Laptop Keyboard  (Black)</p>
+                                    <p>2,500</p>
+    							</div>
+    						</li>
+    					</ul>
+    				</nav>	
+    			</div>
+
+    			<div class="items_line_2">
+                  <h3>Mobile Accessories</h3>  
+    				<nav class="line_2_list">
+    					<ul>
+    						<li>
+    							<div class="laptop_1">
+                                    <img src="images/honor9.png">
+                                    <p>Krkis Front & Back Case for Honor 9Lite</p>
+                                    <p>400</p>
+    							</div>
+    						</li>
+    						<li>
+    							<div class="laptop_2">
+                                    <img src="images/iphonecover.png">
+                                    <p>Back Cover for Apple iPhone 6</p>
+    							    <p>300</p>
+                                </div>
+    						</li>
+    						<li>
+    							<div class="laptop_2">
+                                    <img src="images/miusb.png">
+                                    <p>NAMYA MI Mobile Charger(White)</p>
+                                    <p>350</p>
+    							</div>
+    						</li>
+    						<li>
+    							<div class="laptop_2">
+                                    <img src="images/honorusb.png">
+                                    <p>NAMYA Honor Mobile Charger</p>
+                                    <p>350</p>
+    							</div>
+    						</li>
+    					</ul>
+    				</nav>
+    			</div>
+
+    			<div class="items_line_3">
+                  <h3>Tablet Accessories</h3>  
+    				<nav class="line_3_list">
+    					<ul>
+    						<li>
+    							<div class="laptop_1">
+                                    <img src="images/ipadcover02.png">
+                                    <p>Apple iPad Stand Case Cover With Holder</p>
+                                    <p>300</p>
+    							</div>
+    						</li>
+    						<li>
+    							<div class="laptop_2">
+                                    <img src="images/iballcover.png">
+                                    <p>Iball Flip Cover By ACM Black</p>
+                                    <p>400</p>
+    							</div>
+    						</li>
+    					</ul>
+    				</nav>
+    			</div>
+
+                <div class="items_line_4">
+                   <h3>SPEAKER</h3> 
+                    <nav class="line_4_list">
+                        <ul>
+                            <li>
+                                <div class="laptop_1">
+                                    <img src="images/speaker01.png">
+                                    <p>F-203G 15 W Portable Speaker(2.1 Channel)</p>
+                                    <p>1,400</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="laptop_2">
+                                    <img src="images/jbl02_03.png">
+                                    <p>JBL 16W Portable Bluetooth Speaker</p>
+                                    <p>5,000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="laptop_2">
+                                    <img src="images/bolt01_03.png">
+                                    <p>boAt Rugby 10W Bluetooth Speaker</p>
+                                    <p>1,000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="laptop_2">
+                                    <img src="images/fandd_03.png">
+                                    <p>A180X 42 W Portable Bluetooth Speaker</p>
+                                    <p>3,000</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="items_line_5">
+                  <h3>HEADPHONE</h3>  
+                    <nav class="line_5_list">
+                        <ul>
+                            <li>
+                                <div class="laptop_1">
+                                    <img src="images/index01_03.png">
+                                    <p>Intex Jogger B Bluetooth Headphone</p>
+                                    <p>1,000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="laptop_2">
+                                    <img src="images/boat05_03.png">
+                                    <p>boAt Rockerz Bluetooth Headset with Mic</p>
+                                    <p>1,800</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="laptop_2">
+                                    <img src="images/jbl05_03.png">
+                                    <p>JBL T450 Wired Headset with Mic</p>
+                                    <p>1,600</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="laptop_2">
+                                    <img src="images/sony_03.png">
+                                    <p>Sony MDR-XB450 Headphone</p>
+                                    <p>1,500</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="items_line_6">
+                  <h3>EARPHONE</h3>  
+                    <nav class="line_6_list">
+                        <ul>
+                            <li>
+                                <div class="laptop_1">
+                                    <img src="images/apples_03.png">
+                                    <p>Apple 4s In Ear Wired Earphones With Mic</p>
+                                    <p>500</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="laptop_2">
+                                    <img src="images/tech_03.png">
+                                    <p>Techno Smart Earphones(Wireless)</p>
+                                    <p>500</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    	</section>
+    </div>
+</div>  
+
+	<!-- footer part -->
+	<footer id="footerpart">
+	<div class="lastpart">
+		<nav class="footer_nav">
+			<ul>
+				<li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+				<li><a href="payment.html">Payment Methods</a></li>
+			</ul>
+		</nav>
+
+		<div class="office">
+			<h3>Registered Office Address</h3>
+			<p>Tecoweb Internet Private Limited,
+			  Vaishnavi Summit, Ground Floor, 7th Main,
+				80 Feet Road, 3rd Block,
+				Koramangala.
+			</p>
+		</div>
+
+		<div class="social_media">
+			<img src="images/facebook_03.png" alt="TECOWEBfb" width="20">
+			<img src="images/instra_03.png" alt="TECOWEBinstra" width="30">
+			<img src="images/twitter_03.png" alt="TECOWEBtwitter" width="30">
+			<p>Copyright &copy 2018</p>
+		</div>
+	</div>
+ </footer> 
+
+ <script>
+
+    function searchOpen() {
+        $("#searchbox").fadeIn();
+    }
+
+    function searchClose() {
+        $("#searchbox").fadeOut();
+    }
+
+    function slide() {
+        $(".dropdwon_menu").slideDown();
+    }
+
+    function slideUp() {
+        $(".dropdwon_menu").slideUp();
+    }
+     
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Rentickle is the renowned online shop which provides furniture, appliance, and other home furnishing essentials on rents. It offers high-quality brand new products for rental in Delhi NCR, Bangalore, Hyderabad in India.">
+	<meta name="keywords" content="Rent Furniture, Appliances for rent, Rental Company, Furniture Rental">
+	<meta name="viewport" content="width=device-width,user-scalable=0">
+	<title>TecoWeb</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobileview.css">
+	<link rel="stylesheet" href="fontawesome5/web-fonts-with-css/css/fontawesome-all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="main">
+	<!-- header part -->
+	<header id="headerpart">
+		<h1 id="logo"><a href="index.html">TecoWeb</a></h1>
+
+		<nav class="main_navigesan">
+			<ul class="navigesan">
+			 	<li><a href="index.html">Home</a></li>
+			 	<li><a href="aboutus.html">AboutUs</a></li>
+			 	<li class="dropdwon"><a href="#">ToBuy<i class="fas fa-sort-down arrow"></i></a>
+					<ul class="dropdwon_menu">
+						<li><a href="Laptop.html">Laptop</a></li>
+						<li><a href="Tablet.html">Tablet</a></li>
+						<li><a href="Mobile.html">Mobile</a></li>
+						<li><a href="Accessories.html">Accessories</a></li>
+					</ul>
+				</li>
+				<li class="fas"><a href="#" title="cart"><img src="images/shoppingCart.png"></a></li>
+				<li class="fas"><a href="#" onclick="searchOpen()"><img id="searchbtn" src="images/search_icon.png"></a></li>
+		  </ul>
+		</nav>
+
+		<div id="searchbox">
+			<div id="contentSearch" class="modal_content">
+				 	<span id="searchclose" onclick="searchClose()">&times;</span>
+				 <div class="search_box">
+				 		<input class="box_search" type="text" placeholder="search"> 
+				 </div>
+			</div>
+		</div>
+    </header>
+
+	<!-- section part-1 with  website details -->
+	<section id="section1">
+		<div class="useraccount">
+			<h2>Great Deals on Laptop,Tablet and Mobile Phone.</h2>
+			<p>
+			   Laptops are a must-have-device for everyone as these
+			   are easy-to-use,Mobile phone  and smartphone  lovers
+        	   are  on a constant hunt to buy the best smartphone <br> at
+         	   a reasonable price.
+     		</p>
+			   <button class="btn1" id="signupBtn" onclick="down()">SignUp</button>
+         	   <button class="btn2" id="singinBtn" onclick="signIn()">SignIn</button>
+		</div>
+	</section>
+
+	<!-- login -->
+<div id="signin_main">
+ <div id="signin">
+ <section class="login_img">
+	 <div class="black">
+		 <p class="login_txt">Productivity and Confidence at <span class="black_txt"> your fingertips</span></p>
+	 </div>
+ </section>
+
+ <section>
+	 <div class="form">
+		 	<span id="signinclose" onclick="slideUp()">&times;</span>
+		 <h1 class="form_head">TecoWeb</h1>
+
+		<div class="lform">
+		 	<p class="login">SignIn to TecoWeb</p>
+		 	<p class="details">Enter Your details below</p>
+
+			<div class="login_form">
+			 <form action="" method="POST">
+				 <p class="label">Email address</p>
+				 <input id="user" type="txt" name="email" placeholder="dummy@xyz.com"><br><br>
+				 <p class="label">Password<span class="right">forgot password</span></p>
+				 <input id="user" type="Password" name="pswd" placeholder="Enter your password"><br>
+				 <input id="signin_btn" type="submit"  value="SignIn">
+			 </form>
+		 	</div>
+		</div>
+
+			 <p class="copy">CopyRight &copy; 2018 Uplabs Form UI Design</p>
+	 </div>
+</section>
+</div>
+</div>
+<!-- login end -->
+
+<!-- signup -->
+<div id="signup_main">
+<div id="signup">
+ <section class="signup_img">
+	 <div class="black2">
+		 <p class="signup_txt">Productivity and Confidence at your fingertips</p>
+	 </div>
+ </section>
+
+ <section>
+	 <div class="form">
+	 	<span id="signupclose" onclick="signUp()">&times;</span>
+		 <h1 class="form_head">TecoWeb</h1>
+
+		<div class="lform">
+		 	<p class="login">SignUp to TecoWeb</p>
+		 	<p class="sign_details">Enter Your details below</p>
+
+			<div class="signup_form">
+			 <form action="" method="POST">
+			 	<p class="input_txt">UserName</p>
+				<input id="input_box" type="txt" name="email" placeholder="USERNAME"><br><br>
+				<p class="input_txt">Email address</p>
+				<input id="input_box" type="txt" name="email" placeholder="dummy@xyz.com"><br><br>
+				<p class="input_txt">Password</p>
+				<input id="input_box" type="Password" name="pswd" placeholder="Enter your password"><br>
+				<input id="signup_btn" type="submit"  value="SignUp">
+			 </form>
+		 	</div>
+		</div>
+
+			 <p class="copy">CopyRight &copy; 2018 Uplabs Form UI Design</p>
+	 </div>
+</section>
+</div>
+</div>
+<!-- signup end -->
+</div>
+
+<main>
+	<!-- section part-2 with gaming laptop details -->
+<section id="section2">
+	 <div class="laptop">
+		<div class="laptop_detail">
+			<h2>Gaming Laptop</h2>
+			<p>
+			   Gaming Laptops have evolved
+			   in a big way over the years with
+         	   the increasing power of the device
+         	   and the decreasing size.The graphics
+			   card or GPU is the keystone of your
+			   gaming laptop. It delivers the images
+			   on your display by processing the data
+			   and transmitting the signal to the monitor.
+			   Due to how stressful this process can be
+			   when running games, you need a discrete
+			   GPU with its own dedicated memory.
+      		</p>
+			   <button class="btn3"><a href="#">SHOP NOW</a></button>
+		 </div>
+
+			<img class="game_laptop" src="images/laptop.png" alt="laptop">
+	 </div>
+ </section>
+
+	<!-- section part-3 with tablet img with Brand Name -->
+<section id="section3">
+	<div class="tablet">
+		<div class="tablet_img">
+			<h2 class="tablet_head">Find The Perfect Tablets</h2>
+				<p>Tablets have successfully replaced Laptops</p>
+					<button class="btn4"><a href="Tablet.html">VIEW ALL</a></button>
+					<div class="alltabletimg">
+						<ul class="Img_tablet">
+							<li class="img1">
+								<img src="images/ipad3.png" alt="ipad">
+							</li>
+							<li class="img2">
+								<img src="images/honor3.png" alt="xolotablet">
+							</li>
+							<li class="img3">
+								<img src="images/dell4.png" alt="dell">
+							</li>
+							<li class="img4">
+								<img src="images/lenovo3.png" alt="microsoft">
+							</li>
+							<li class="img5">
+								<img src="images/tablet5.png" alt="microsoft">
+							</li>
+							<li class="img6">
+								<img src="images/nexus02.png" alt="microsoft">
+							</li>
+							<li class="img7">
+								<img src="images/acer01.png" alt="microsoft">
+							</li>
+							<li class="img8">
+								<img src="images/tablet2.png" alt="microsoft">
+							</li>
+						</ul>
+					</div>
+					
+<!-- 					<ul class="flex-direction-nav">
+      					<li class="flex-nav-prev">
+        					<a class="flex-prev flex-disabled" href="#" tabindex="-1">Previous</a>
+      					</li>
+      					<li class="flex-nav-next">
+        					<a class="flex-next" href="#" tabindex="-1">Next</a>
+      					</li>
+    				</ul> -->
+		</div>
+  	</div>
+</section>
+
+	<!-- section part-4 with Accessories -->
+	<section id="section4">
+	  <div class="acces">
+		<h2 class="heading1">Find The Perfect Accessories</h2>
+		<button class="btn5"><a href="Accessories.html">VIEW ALL</a></button>
+		<div class="speaker">
+			<img src="images/spearker.png" alt="speaker">
+			<h2>SPEAKER</h2>
+			<P>
+				There are many variations of passages of Lorem Ipsum 	available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+			</P>
+		</div>
+
+		<div class="headphone">
+			<img src="images/headphone.png" alt="headphone">
+			<h2>HEADPHONE</h2>
+			<P>
+				There are many variations of passages of Lorem Ipsum 	available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+			</P>
+		</div>
+
+		<div class="earphone">
+			<img src="images/earphone.png" alt="earphone">
+			<h2>EARPHONE</h2>
+			<P>
+				There are many variations of passages of Lorem Ipsum 	available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+			</P>
+		</div>
+	  </div>
+	</section>
+
+	<!-- section part-5 with iphones and mobile phone details -->
+	<section id="apple">
+		<div class="iphone">
+			<img class="apple_img" src="images/apple.png" alt="apple">
+			<div class="iphone_txt">
+				<h2>iPhone available here</h2>
+				<p>iPhone  is a line of smartphones designed and marketed
+			   	   by Apple Inc. multiple new hardware iterations with new
+			       iOS releases have been  released since.The user interface
+         	   is built around the device's multi-touch screen, includ.
+      	</p>
+      	<button class="iphone_btn"><a href="iphone.html">SHOP NOW</a></button>
+      </div>
+		</div>
+	</section>
+
+	<section id="mobile">
+		<div class="smartphone">
+			<img class="pnone" src="images/phone2.png" alt="phone">
+			<div class="phone_txt">
+				<h2>Mobile Phone</h2>
+				<p>Mobile phone usage is on the rise and smartphone
+			   	   lovers are on a constant hunt to buy the best smartphone
+			       at a reasonable price. Tecoweb is the right platform for you
+			       to look for a mobile phone that fits your budget, technic.
+			  </p>
+				<button class="phone_btn"><a href="Mobile.html">SHOP NOW</a></button>
+			</div>
+		</div>
+	</section>
+</main>
+
+	<!-- footer part -->
+	<footer id="footerpart">
+	<div class="lastpart">
+		<nav class="footer_nav">
+			<ul>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="payment.html">Payment Methods</a></li>
+			</ul>
+		</nav>
+
+		<div class="office">
+			<h3>Registered Office Address</h3>
+			<p>Tecoweb Internet Private Limited,
+			  Vaishnavi Summit, Ground Floor, 7th Main,
+				80 Feet Road, 3rd Block,
+				Koramangala.
+			</p>
+		</div>
+
+		<div class="social_media">
+			<img src="images/facebook_03.png" alt="TECOWEBfb" width="20">
+			<img src="images/instra_03.png" alt="TECOWEBinstra" width="30">
+			<img src="images/twitter_03.png" alt="TECOWEBtwitter" width="30">
+			<p>Copyright &copy 2018</p>
+		</div>
+	</div>
+ </footer>
+
+ 	<script src="js/script.js"></script>
+</body>
+</html>
